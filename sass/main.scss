@@ -1,7 +1,10 @@
 @import "./utils/fonts";
 @import "./utils/normalize";
-@import "./utils/base";
-@import "./utils/container";
 @import "./utils/vars";
+@import "./utils/container";
+@import "./utils/base";
 
 @import "./components/header";
+@import "./components/hero";
+@import "./components/category";
+@import "./components/vacancy";

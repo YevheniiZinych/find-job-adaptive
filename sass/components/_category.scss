@@ -1,0 +1,36 @@
+.category {
+  text-align: center;
+
+  margin-bottom: 50px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+}
+
+.category__list {
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 166px;
+    height: 128px;
+
+    background-color: $hero-bg-color;
+
+    border-radius: 10px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &-icon {
+      margin-bottom: 15px;
+    }
+  }
+}

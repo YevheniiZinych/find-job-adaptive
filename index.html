@@ -9,13 +9,184 @@
   <body>
     <header class="header">
       <div class="container">
-        <a class="header__logo-link" href="./index.html">
-          <svg class="header__icon">
-            <use href="./img/sprite.svg#logo-icon"></use>
-          </svg>
-          <p class="header__logo-text">FindYour<span>Job</span></p>
-        </a>
+        <nav class="header__nav">
+          <a class="header__logo-link" href="./index.html">
+            <svg class="header__icon">
+              <use href="./img/sprite.svg#logo-icon"></use>
+            </svg>
+            <p class="header__logo-text">FindYour<span>Job</span></p>
+          </a>
+          <div class="header--burger-menu"></div>
+        </nav>
       </div>
     </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">Найдите удаленную работу вашей мечты</h1>
+          <p class="hero__subtitle">
+            Создайте резюме или отправьте отклик на вакансию в компании с
+            мировым именем и работайте по свободному графику
+          </p>
+          <form class="hero__form">
+            <div class="hero__form--wrapp">
+              <input class="hero__form-input" id="serch" required type="text" />
+              <label for="serch" class="hero__form-label">
+                Начните поиск
+              </label>
+              <button class="hero__form-btn" type="submit">
+                <svg class="hero__form-btn-icon" width="15" height="15">
+                  <use href="./img/sprite.svg#search-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+          <div class="hero__examples">
+            <p class="hero__examples-text">Например:</p>
+            <ul class="hero__examples-list">
+              <li class="hero__examples-item">
+                <p class="hero__examples-text">Front-end</p>
+              </li>
+              <li class="hero__examples-item">
+                <p class="hero__examples-text">Back-end</p>
+              </li>
+              <li class="hero__examples-item">
+                <p class="hero__examples-text">Designer</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="category">
+        <div class="container">
+          <h2 class="category__title">Категории</h2>
+          <ul class="category__list">
+            <li class="category__list-item">
+              <svg class="category__list-item-icon" width="24" height="24">
+                <use href="./img/sprite.svg#design-icon"></use>
+              </svg>
+              <p class="category__list-item-text">Дизайн</p>
+            </li>
+            <li class="category__list-item">
+              <svg class="category__list-item-icon" width="24" height="24">
+                <use href="./img/sprite.svg#dev-icon"></use>
+              </svg>
+              <p class="category__list-item-text">Разработка</p>
+            </li>
+            <li class="category__list-item">
+              <svg class="category__list-item-icon" width="24" height="24">
+                <use href="./img/sprite.svg#copie-icon"></use>
+              </svg>
+              <p class="category__list-item-text">Копирайтинг</p>
+            </li>
+            <li class="category__list-item">
+              <svg class="category__list-item-icon" width="24" height="24">
+                <use href="./img/sprite.svg#securuty-icon"></use>
+              </svg>
+              <p class="category__list-item-text">Безопасность</p>
+            </li>
+            <li class="category__list-item">
+              <svg class="category__list-item-icon" width="24" height="24">
+                <use href="./img/sprite.svg#video-icon"></use>
+              </svg>
+              <p class="category__list-item-text">Видео</p>
+            </li>
+            <li class="category__list-item">
+              <svg class="category__list-item-icon" width="24" height="24">
+                <use href="./img/sprite.svg#education-icon"></use>
+              </svg>
+              <p class="category__list-item-text">Образование</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="vacancy">
+        <div class="container">
+          <h2>Свежие вакансии</h2>
+          <ul class="vacancy__list">
+            <li class="vacancy__item">
+              <img class="vacancy__image" src="./img/logo-company.png" alt="" />
+              <h3 class="vacancy__title">Front-end разработчик</h3>
+              <p class="vacancy__subtitle">Технопарк, Казань</p>
+              <span class="vacancy__salary">65 000 ₽</span>
+              <div class="vacancy__details">
+                <p class="vacancy__details-text">Требования:</p>
+                <ul class="vacancy__details-list">
+                  <li class="vacancy__details-item">React</li>
+                  <li class="vacancy__details-item">Sass</li>
+                  <li class="vacancy__details-item">Figma</li>
+                </ul>
+              </div>
+              <a class="vacancy__link" href="#!">
+                <span class="vacancy__link-text"> Подробнее</span>
+                <svg class="vacancy__link-icon" width="14" height="14">
+                  <use href="./img/sprite.svg#right-arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="vacancy__item">
+              <img class="vacancy__image" src="./img/logo-company.png" alt="" />
+              <h3 class="vacancy__title">Front-end разработчик</h3>
+              <p class="vacancy__subtitle">Технопарк, Казань</p>
+              <span class="vacancy__salary">65 000 ₽</span>
+              <div class="vacancy__details">
+                <p class="vacancy__details-text">Требования:</p>
+                <ul class="vacancy__details-list">
+                  <li class="vacancy__details-item">React</li>
+                  <li class="vacancy__details-item">Sass</li>
+                  <li class="vacancy__details-item">Figma</li>
+                </ul>
+              </div>
+              <a class="vacancy__link" href="#!">
+                <span class="vacancy__link-text"> Подробнее</span>
+                <svg class="vacancy__link-icon" width="14" height="14">
+                  <use href="./img/sprite.svg#right-arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="vacancy__item">
+              <img class="vacancy__image" src="./img/logo-company.png" alt="" />
+              <h3 class="vacancy__title">Front-end разработчик</h3>
+              <p class="vacancy__subtitle">Технопарк, Казань</p>
+              <span class="vacancy__salary">65 000 ₽</span>
+              <div class="vacancy__details">
+                <p class="vacancy__details-text">Требования:</p>
+                <ul class="vacancy__details-list">
+                  <li class="vacancy__details-item">React</li>
+                  <li class="vacancy__details-item">Sass</li>
+                  <li class="vacancy__details-item">Figma</li>
+                </ul>
+              </div>
+              <a class="vacancy__link" href="#!">
+                <span class="vacancy__link-text"> Подробнее</span>
+                <svg class="vacancy__link-icon" width="14" height="14">
+                  <use href="./img/sprite.svg#right-arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="vacancy__item">
+              <img class="vacancy__image" src="./img/logo-company.png" alt="" />
+              <h3 class="vacancy__title">Front-end разработчик</h3>
+              <p class="vacancy__subtitle">Технопарк, Казань</p>
+              <span class="vacancy__salary">65 000 ₽</span>
+              <div class="vacancy__details">
+                <p class="vacancy__details-text">Требования:</p>
+                <ul class="vacancy__details-list">
+                  <li class="vacancy__details-item">React</li>
+                  <li class="vacancy__details-item">Sass</li>
+                  <li class="vacancy__details-item">Figma</li>
+                </ul>
+              </div>
+              <a class="vacancy__link" href="#!">
+                <span class="vacancy__link-text"> Подробнее</span>
+                <svg class="vacancy__link-icon" width="14" height="14">
+                  <use href="./img/sprite.svg#right-arrow"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

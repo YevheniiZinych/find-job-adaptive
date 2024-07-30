@@ -46,23 +46,299 @@ button {
   background-color: transparent;
 }
 
-body {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.2142857143;
-}
-
 .container {
-  width: 1145px;
   height: 100%;
   padding: 0 15px;
   margin: 0 auto;
   outline: 1px solid red;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
 
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  color: #111238;
+}
+
+.header {
+  position: absolute;
+  top: 29px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .header__icon {
   width: 30px;
   height: 30px;
-  fill: blue;
+  fill: #111238;
+}
+.header__logo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 7px;
+}
+.header__logo-text {
+  font-weight: 700;
+  color: #111238;
+}
+.header__logo-text span {
+  color: #1a75e8;
+}
+
+.header--burger-menu {
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background-color: #111238;
+  border-radius: 16px;
+}
+.header--burger-menu::after, .header--burger-menu::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: inherit;
+}
+.header--burger-menu::after {
+  bottom: 6px;
+}
+.header--burger-menu::before {
+  top: 6px;
+}
+
+.hero {
+  height: 780px;
+  padding-top: 94px;
+  margin-bottom: 50px;
+  background: no-repeat url(../../img/hero-image.png);
+  background-color: #f2f3f6;
+  background-size: 252px 258px;
+  background-position: bottom 36px center;
+  text-align: center;
+}
+.hero__title {
+  width: 235px;
+  margin: 0 auto 21px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.2083333333;
+}
+.hero__subtitle {
+  width: 220px;
+  margin: 0 auto 29px;
+}
+
+.hero__form {
+  width: 290px;
+  margin: 0 auto 20px;
+}
+.hero__form--wrapp {
+  position: relative;
+}
+.hero__form-label {
+  position: absolute;
+  left: 25px;
+  top: 26px;
+  color: #b2b2b2;
+  font-size: 16px;
+  line-height: 1.1875;
+}
+.hero__form-input {
+  width: 100%;
+  height: 70px;
+  border: 1px solid rgba(209, 209, 209, 0.1);
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 25px 0px rgba(15, 17, 56, 0.1);
+          box-shadow: 0px 4px 25px 0px rgba(15, 17, 56, 0.1);
+  outline: none;
+}
+.hero__form-btn {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  padding: 15px 30px;
+  background-color: #1a75e8;
+  border-radius: 5px;
+}
+.hero__form-btn-icon {
+  fill: #ffffff;
+}
+
+.hero__examples > P {
+  margin-bottom: 15px;
+}
+.hero__examples-text {
+  color: #b2b2b2;
+}
+.hero__examples-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+.hero__examples-item {
+  padding: 5px 10px;
+  border: 1px solid rgb(178, 178, 178);
+  border-radius: 5px;
+}
+
+.category {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.category__title {
+  margin-bottom: 40px;
+}
+
+.category__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.category__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 166px;
+  height: 128px;
+  background-color: #f2f3f6;
+  border-radius: 10px;
+}
+.category__list-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.category__list-item-icon {
+  margin-bottom: 15px;
+}
+
+.vacancy {
+  text-align: center;
+}
+.vacancy h2 {
+  margin-bottom: 40px;
+}
+.vacancy__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.vacancy__item {
+  width: 290px;
+  padding: 30px;
+  border: 1px solid #b2b2b2;
+  border-radius: 10px;
+}
+.vacancy__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.vacancy__image {
+  margin: 0 auto 30px;
+}
+.vacancy__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.1875;
+  margin-bottom: 10px;
+}
+.vacancy__subtitle {
+  margin-bottom: 30px;
+}
+.vacancy__salary {
+  display: block;
+  width: 113px;
+  height: 39px;
+  padding: 10px 25px;
+  margin: 0 auto 30px;
+  color: #ffffff;
+  background-color: #1a75e8;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.1875;
+}
+.vacancy__details-text {
+  margin-bottom: 15px;
+  color: #b2b2b2;
+}
+.vacancy__details-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  color: #b2b2b2;
+}
+.vacancy__details-item {
+  padding: 5px 10px;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+}
+.vacancy__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  color: #1a75e8;
+}
+.vacancy__link-icon {
+  fill: #1a75e8;
 }/*# sourceMappingURL=main.css.map */

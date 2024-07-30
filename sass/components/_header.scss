@@ -1,7 +1,60 @@
 .header {
+  position: absolute;
+  top: 29px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   &__icon {
     width: 30px;
     height: 30px;
-    fill: blue;
+    fill: $primary-color;
+  }
+
+  &__logo-link {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  &__logo-text {
+    font-weight: 700;
+    color: $primary-color;
+
+    span {
+      color: $blue-color;
+    }
+  }
+}
+
+.header--burger-menu {
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background-color: $primary-color;
+  border-radius: 16px;
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: inherit;
+  }
+
+  &::after {
+    bottom: 6px;
+  }
+
+  &::before {
+    top: 6px;
   }
 }

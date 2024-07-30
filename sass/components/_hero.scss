@@ -1,0 +1,98 @@
+.hero {
+  height: 780px;
+
+  padding-top: 94px;
+  margin-bottom: 50px;
+
+  background: no-repeat url(../../img/hero-image.png);
+  background-color: $hero-bg-color;
+  background-size: 252px 258px;
+  background-position: bottom 36px center;
+
+  text-align: center;
+
+  &__title {
+    width: 235px;
+    margin: 0 auto 21px;
+
+    font-weight: 900;
+    font-size: 24px;
+    line-height: calc(29 / 24);
+  }
+
+  &__subtitle {
+    width: 220px;
+    margin: 0 auto 29px;
+  }
+}
+
+.hero__form {
+  width: 290px;
+
+  margin: 0 auto 20px;
+
+  &--wrapp {
+    position: relative;
+  }
+
+  &-label {
+    position: absolute;
+    left: 25px;
+    top: 26px;
+
+    color: $grey-color;
+
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
+
+  &-input {
+    width: 100%;
+    height: 70px;
+
+    border: 1px solid rgba(209, 209, 209, 0.1);
+    border-radius: 5px;
+    box-shadow: 0px 4px 25px 0px rgba(15, 17, 56, 0.1);
+    outline: none;
+  }
+
+  &-btn {
+    position: absolute;
+
+    right: 10px;
+    top: 12px;
+
+    padding: 15px 30px;
+
+    background-color: $blue-color;
+    border-radius: 5px;
+
+    &-icon {
+      fill: #ffffff;
+    }
+  }
+}
+
+.hero__examples {
+  & > P {
+    margin-bottom: 15px;
+  }
+
+  &-text {
+    color: $grey-color;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: center;
+
+    gap: 10px;
+  }
+
+  &-item {
+    padding: 5px 10px;
+
+    border: 1px solid rgb(178, 178, 178);
+    border-radius: 5px;
+  }
+}
