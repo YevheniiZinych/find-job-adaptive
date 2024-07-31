@@ -36,10 +36,11 @@ img {
 
 a {
   text-decoration: none;
+  cursor: url("../../img/coursor-icon.svg"), auto;
 }
 
 button {
-  cursor: pointer;
+  cursor: url("../../img/coursor-icon.svg"), auto;
   border: none;
   background-color: transparent;
 }

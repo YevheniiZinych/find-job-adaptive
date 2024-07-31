@@ -1,8 +1,14 @@
 .vacancy {
   text-align: center;
 
+  padding: 50px 0;
+
   h2 {
     margin-bottom: 40px;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: calc(22 / 18);
   }
 
   &__list {
@@ -10,6 +16,8 @@
     flex-direction: column;
 
     align-items: center;
+
+    margin-bottom: 30px;
   }
 
   &__item {
@@ -88,8 +96,22 @@
     gap: 5px;
 
     color: $blue-color;
+
     &-icon {
       fill: $blue-color;
     }
+  }
+
+  &__more-btn {
+    padding: 15px 30px;
+
+    background-color: $blue-color;
+    color: #ffffff;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    line-height: calc(19 / 16);
   }
 }

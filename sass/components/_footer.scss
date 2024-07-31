@@ -1,0 +1,72 @@
+.footer {
+  text-align: center;
+
+  padding: 50px 0;
+
+  &__logo--wrapp {
+    margin-bottom: 30px;
+  }
+
+  &__logo-img {
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  &__logo-text {
+    width: 166px;
+
+    margin: 0 auto 10px;
+
+    color: $grey-color;
+
+    font-size: 12px;
+  }
+
+  &__logo-copy {
+    color: $grey-color;
+  }
+}
+
+.footer__address {
+  margin-bottom: 30px;
+  &-text {
+    @extend %mobile-footer-title;
+  }
+
+  &-list {
+    @extend %mobile-footer-list;
+  }
+
+  &-link {
+    @extend %mobile-footer-link;
+  }
+}
+
+.footer__info {
+  margin-bottom: 30px;
+  &-text {
+    @extend %mobile-footer-title;
+  }
+
+  &-list {
+    @extend %mobile-footer-list;
+  }
+
+  &-link {
+    @extend %mobile-footer-link;
+  }
+}
+
+.footer__nav {
+  &-text {
+    @extend %mobile-footer-title;
+  }
+
+  &-list {
+    @extend %mobile-footer-list;
+  }
+
+  &-link {
+    @extend %mobile-footer-link;
+  }
+}

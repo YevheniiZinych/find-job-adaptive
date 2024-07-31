@@ -1,0 +1,25 @@
+%mobile-footer-title {
+  margin-bottom: 15px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: calc(19 / 16);
+}
+
+%mobile-footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+%mobile-footer-link {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  color: inherit;
+}
+
+%flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
