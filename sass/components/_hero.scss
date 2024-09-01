@@ -1,16 +1,35 @@
 .hero {
   height: 780px;
-  width: 320px;
 
   padding-top: 94px;
-  margin: 0 auto 50px;
-
-  background: no-repeat url(../../img/hero-image.png);
-  background-color: $hero-bg-color;
-  background-size: 252px 258px;
-  background-position: bottom 36px center;
+  margin-bottom: 50px;
 
   text-align: center;
+
+  background-color: $hero-bg-color;
+
+  @media screen and (min-width: 1175px) {
+    background-size: 544px 557px;
+
+    background-position: right 160px bottom 56px;
+
+    text-align: initial;
+  }
+
+  &__bg-img {
+    width: 100%;
+    height: 100%;
+    background: no-repeat url(../../img/hero-image.png);
+
+    background-size: 252px 258px;
+    background-position: bottom 36px center;
+
+    @media screen and (min-width: 1175px) {
+      background-size: 544px 557px;
+
+      background-position: right bottom 56px;
+    }
+  }
 
   &__title {
     width: 235px;
@@ -19,11 +38,29 @@
     font-weight: 900;
     font-size: 24px;
     line-height: calc(29 / 24);
+
+    @media screen and (min-width: 1175px) {
+      display: inline-block;
+      width: 460px;
+      margin: 140px 0 0;
+
+      font-size: 44px;
+      line-height: calc(53 / 44);
+
+      margin-bottom: 15px;
+    }
   }
 
   &__subtitle {
     width: 220px;
     margin: 0 auto 29px;
+
+    @media screen and (min-width: 1175px) {
+      width: 460px;
+      margin: 0 0 29px;
+
+      font-size: 18px;
+    }
   }
 }
 
@@ -31,6 +68,12 @@
   width: 290px;
 
   margin: 0 auto 20px;
+
+  @media screen and (min-width: 1175px) {
+    margin: 0 0 25px;
+
+    width: 447px;
+  }
 
   &--wrapp {
     position: relative;
@@ -70,6 +113,9 @@
   &-btn {
     position: absolute;
 
+    display: flex;
+    align-items: center;
+
     right: 10px;
     top: 12px;
 
@@ -80,17 +126,51 @@
 
     &-icon {
       fill: #ffffff;
+
+      @media screen and (min-width: 1175px) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &-btn-text {
+    display: none;
+
+    font-size: 16px;
+
+    line-height: calc(19 / 16);
+
+    @media screen and (min-width: 1175px) {
+      display: inline-block;
+      color: #ffffff;
     }
   }
 }
 
 .hero__examples {
-  & > P {
-    margin-bottom: 15px;
+  @media screen and (min-width: 1175px) {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
   }
 
   &-text {
+    margin-bottom: 15px;
+
     color: $grey-color;
+
+    @media screen and (min-width: 1175px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &-item-text {
+    color: $grey-color;
+
+    @media screen and (min-width: 1175px) {
+      text-align: left;
+    }
   }
 
   &-list {
@@ -98,6 +178,10 @@
     justify-content: center;
 
     gap: 10px;
+
+    @media screen and (min-width: 1175px) {
+      justify-content: flex-start;
+    }
   }
 
   &-item {

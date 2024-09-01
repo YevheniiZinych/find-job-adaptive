@@ -5,10 +5,20 @@
   left: 50%;
   transform: translateX(-50%);
 
-  &__nav {
+  @media screen and (min-width: 1175px) {
+    width: 1175px;
+  }
+
+  &--flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (min-width: 1175px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   &__icon {
@@ -33,12 +43,34 @@
   }
 }
 
+.header__nav-list {
+  display: none;
+
+  @media screen and (min-width: 1175px) {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.header-user {
+  display: none;
+
+  @media screen and (min-width: 1175px) {
+    display: flex;
+    gap: 40px;
+  }
+}
+
 .header--burger-menu {
   position: relative;
   width: 24px;
   height: 2px;
   background-color: $primary-color;
   border-radius: 16px;
+
+  @media screen and (min-width: 1175px) {
+    display: none;
+  }
 
   &::after,
   &::before {
